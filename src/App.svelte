@@ -38,7 +38,7 @@
 	<MDA bind:area={captureArea} />
 	<div>
 		<h1 class="mb-2 text-3xl font-semibold text-black dark:text-zinc-200">
-			<a href="https://migan.co.kr">미간</a>라트
+			<a href="https://miganbox.com">미간</a>라트
 		</h1>
 		<div>
 			<div class="mb-2">
