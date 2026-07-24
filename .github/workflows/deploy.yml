@@ -18,12 +18,12 @@ jobs:
         uses: pnpm/action-setup@v6
         with:
           version: "11.8.0"
-          cache: true 
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "24.17.0"
+          cache: pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -36,7 +36,7 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-avzr --delete --delay-updates"
-          SOURCE: "build/"
+          SOURCE: "dist/"
           REMOTE_HOST: ${{ secrets.SSH_HOST }}
           REMOTE_USER: ${{ secrets.SSH_USERNAME }}
           TARGET: ${{ secrets.WORKING_DIRECTORY }}
