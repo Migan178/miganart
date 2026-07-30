@@ -10,15 +10,15 @@ interface URIComponentData {
 	subGoals: SubGoals;
 }
 
-const mandalartName = writable("");
+const mandalaArtName = writable("");
 
-export default mandalartName;
+export default mandalaArtName;
 
 export const subNames = writable<string[]>([]);
 
 export const subGoals = writable<string[][]>([[], [], [], [], [], [], [], []]);
 
-export function saveMandalart() {
+export function saveMandalaArt() {
 	const subNamesObject: SubNames = {};
 	const subGoalsObject: SubGoals = {};
 
@@ -40,7 +40,7 @@ export function saveMandalart() {
 	}
 
 	const data: URIComponentData = {
-		name: get(mandalartName),
+		name: get(mandalaArtName),
 		subNames: subNamesObject,
 		subGoals: subGoalsObject,
 	};
@@ -53,7 +53,7 @@ export function saveMandalart() {
 	window.history.replaceState({}, "", url);
 }
 
-export function loadMandalArt() {
+export function loadMandalaArt() {
 	const params = new URLSearchParams(window.location.search);
 
 	try {
@@ -64,7 +64,7 @@ export function loadMandalArt() {
 			decodeURIComponent(decodedData),
 		);
 
-		mandalartName.set(data.name || "");
+		mandalaArtName.set(data.name || "");
 
 		const subNamesArray: string[] = [];
 		for (const k in data.subNames) {

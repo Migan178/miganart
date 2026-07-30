@@ -1,6 +1,6 @@
 <script lang="ts">
 	import MDA from "./lib/MDA.svelte";
-	import mandalartName, { loadMandalArt, saveMandalart } from "./stores/name";
+	import mandalaArtName, { loadMandalaArt, saveMandalaArt } from "./stores/name";
 	import { domToPng } from "modern-screenshot";
 	import { onMount } from "svelte";
 
@@ -20,7 +20,7 @@
 	}
 
 	function handleBlur() {
-		saveMandalart();
+		saveMandalaArt();
 	}
 
 	async function handleShare() {
@@ -28,7 +28,7 @@
 	}
 
 	onMount(() => {
-		loadMandalArt();
+		loadMandalaArt();
 	});
 </script>
 
@@ -47,7 +47,7 @@
 					id="name"
 					type="text"
 					class="rounded-4xl px-4 py-2"
-					bind:value={$mandalartName}
+					bind:value={$mandalaArtName}
 					onblur={handleBlur}
 				/>
 			</div>

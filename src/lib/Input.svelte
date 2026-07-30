@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { saveMandalart } from "../stores/name";
+	import { saveMandalaArt } from "../stores/name";
 
 	let {
 		value = $bindable(),
@@ -10,7 +10,7 @@
 	} = $props();
 
 	function handleBlur() {
-		saveMandalart();
+		saveMandalaArt();
 	}
 </script>
 

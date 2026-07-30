@@ -1,5 +1,5 @@
 <script lang="ts">
-	import mandalartName from "../stores/name";
+	import mandalaArtName from "../stores/name";
 	import { subNames } from "../stores/name";
 	import Input from "./Input.svelte";
 </script>
@@ -12,7 +12,7 @@
 	</div>
 	<div class="flex">
 		<Input bind:value={$subNames[3]} sub />
-		<Input bind:value={$mandalartName} />
+		<Input bind:value={$mandalaArtName} />
 		<Input bind:value={$subNames[4]} sub />
 	</div>
 	<div class="flex">
