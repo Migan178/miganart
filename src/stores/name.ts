@@ -66,23 +66,30 @@ export function loadMandalaArt() {
 
 		mandalaArtName.set(data.name || "");
 
-		const subNamesArray: string[] = [];
-		for (const k in data.subNames) {
-			if (!data.subNames[k]) continue;
-			else subNamesArray[k] = data.subNames[k];
-		}
-
-		subNames.set(subNamesArray);
-
-		const subGoalsArray: string[][] = [[], [], [], [], [], [], [], []];
-		for (const k1 in data.subGoals) {
-			for (const k2 in data.subGoals[k1]) {
-				if (!data.subGoals[k1][k2]) continue;
-				subGoalsArray[k1][k2] = data.subGoals[k1][k2];
+		if (Array.isArray(data.subNames)) {
+			subNames.set(data.subNames || []);
+		} else {
+			const subNamesArray: string[] = [];
+			for (const k in data.subNames) {
+				if (!data.subNames[k]) continue;
+				else subNamesArray[k] = data.subNames[k];
 			}
+
+			subNames.set(subNamesArray);
 		}
 
-		subGoals.set(subGoalsArray);
+		if (Array.isArray(data.subGoals)) {
+			subGoals.set(data.subGoals || [[], [], [], [], [], [], [], []]);
+		} else {
+			const subGoalsArray: string[][] = [[], [], [], [], [], [], [], []];
+			for (const k1 in data.subGoals) {
+				for (const k2 in data.subGoals[k1]) {
+					if (!data.subGoals[k1][k2]) continue;
+					subGoalsArray[k1][k2] = data.subGoals[k1][k2];
+				}
+			}
+			subGoals.set(subGoalsArray);
+		}
 	} catch (err) {
 		console.error(err);
 	}
