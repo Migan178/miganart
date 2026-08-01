@@ -5,7 +5,7 @@
 	let { area = $bindable() }: { area: any | null } = $props();
 </script>
 
-<div class="h-fit w-fit border" bind:this={area}>
+<div class="h-fit w-fit border border-slate-200 dark:border-black" bind:this={area}>
 	<div class="flex">
 		{#each { length: 3 }, i}
 			<SubMDA {i} />
