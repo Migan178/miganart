@@ -26,7 +26,7 @@ importers:
         version: 7.3.1(svelte@5.57.3)(vite@8.3.6(@types/node@24.19.2)(esbuild@0.28.1)(jiti@2.7.0)(terser@5.49.0))
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^6.0.2
-        version: 6.0.2(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3)
+        version: 6.0.2(prettier-plugin-svelte@4.2.0(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3)
       '@tsconfig/svelte':
         specifier: ^5.0.6
         version: 5.0.8
@@ -38,10 +38,10 @@ importers:
         version: 3.9.10
       prettier-plugin-svelte:
         specifier: ^4.0.0
-        version: 4.1.1(prettier@3.9.10)(svelte@5.57.3)
+        version: 4.2.0(prettier@3.9.10)(svelte@5.57.3)
       prettier-plugin-tailwindcss:
         specifier: ^0.8.1
-        version: 0.8.1(@trivago/prettier-plugin-sort-imports@6.0.2(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3))(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)
+        version: 0.8.1(@trivago/prettier-plugin-sort-imports@6.0.2(prettier-plugin-svelte@4.2.0(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3))(prettier-plugin-svelte@4.2.0(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)
       svelte:
         specifier: ^5.56.8
         version: 5.57.3
@@ -2039,8 +2039,8 @@ packages:
     resolution: {integrity: sha512-LJlKCCAUFKOuZxipUdYw1NzIITEsPcgyOG9LkvRJvuKj/bRzbuRY0ARXvL0pWGpsZvn8jku+LMep2eU0seHp8g==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier-plugin-svelte@4.1.1:
-    resolution: {integrity: sha512-wXvbXMjSvb4C9ENWTHXyd+ihakKCsJ6rJhLP6/8HFNj4GkZr48jqL9PoKsl2sk7SyCZRTnJ7O2TTowUpOxP/KA==}
+  prettier-plugin-svelte@4.2.0:
+    resolution: {integrity: sha512-VgUFSR6+7/KLloVSIgKMwY/9OFxaixY/xsOBUCP95ZKaxSa6JBtLKzq6L1L/Tw6Jc1C7K+op7D1Yu5qD+YdPHA==}
     engines: {node: '>=20'}
     peerDependencies:
       prettier: ^3.0.0
@@ -3600,7 +3600,7 @@ snapshots:
       magic-string: 0.30.21
       string.prototype.matchall: 4.0.12
 
-  '@trivago/prettier-plugin-sort-imports@6.0.2(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3)':
+  '@trivago/prettier-plugin-sort-imports@6.0.2(prettier-plugin-svelte@4.2.0(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3)':
     dependencies:
       '@babel/generator': 7.29.7
       '@babel/parser': 7.29.7
@@ -3612,7 +3612,7 @@ snapshots:
       parse-imports-exports: 0.2.4
       prettier: 3.9.10
     optionalDependencies:
-      prettier-plugin-svelte: 4.1.1(prettier@3.9.10)(svelte@5.57.3)
+      prettier-plugin-svelte: 4.2.0(prettier@3.9.10)(svelte@5.57.3)
       svelte: 5.57.3
     transitivePeerDependencies:
       - supports-color
@@ -4436,17 +4436,17 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
-  prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.3):
+  prettier-plugin-svelte@4.2.0(prettier@3.9.10)(svelte@5.57.3):
     dependencies:
       prettier: 3.9.10
       svelte: 5.57.3
 
-  prettier-plugin-tailwindcss@0.8.1(@trivago/prettier-plugin-sort-imports@6.0.2(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3))(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10):
+  prettier-plugin-tailwindcss@0.8.1(@trivago/prettier-plugin-sort-imports@6.0.2(prettier-plugin-svelte@4.2.0(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3))(prettier-plugin-svelte@4.2.0(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10):
     dependencies:
       prettier: 3.9.10
     optionalDependencies:
-      '@trivago/prettier-plugin-sort-imports': 6.0.2(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3)
-      prettier-plugin-svelte: 4.1.1(prettier@3.9.10)(svelte@5.57.3)
+      '@trivago/prettier-plugin-sort-imports': 6.0.2(prettier-plugin-svelte@4.2.0(prettier@3.9.10)(svelte@5.57.3))(prettier@3.9.10)(svelte@5.57.3)
+      prettier-plugin-svelte: 4.2.0(prettier@3.9.10)(svelte@5.57.3)
 
   prettier@3.9.10: {}
 
